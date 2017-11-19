@@ -1,7 +1,7 @@
 import {FETCHING_PEOPLE, FETCHING_PEOPLE_SUCCESS, FETCHING_PEOPLE_FAILURE} from './constants'
 
 export const fetchPeoplefromAPI = () => {
-    return(dispatch) {
+    return (dispatch) => {
         dispatch(getPeople())
         fetch("https://swapi.co/api/people")
         .then( res => res.json())
